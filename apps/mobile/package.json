@@ -1,0 +1,19 @@
+{
+  "name": "itles-mobile",
+  "version": "0.2.0",
+  "private": true,
+  "description": "ITles для Android/iOS: кабинет и режим «Телефон в кабине» (Capacitor)",
+  "scripts": {
+    "prepare-web": "node prepare-web.mjs",
+    "sync": "npm run prepare-web && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.2",
+    "@capacitor/core": "8.5.2",
+    "@capgo/background-geolocation": "8.4.7"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.2",
+    "esbuild": "0.28.2"
+  }
+}

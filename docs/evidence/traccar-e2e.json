@@ -1,0 +1,219 @@
+{
+ "traccar_version_checked": "6.15.3",
+ "forwarded_written": 13860,
+ "rows_after_reconciliation": 17427,
+ "reconciliation_duplicates_ignored": 13860,
+ "devices": [
+  {
+   "imei": "860000000000011",
+   "profile": "tractor_can",
+   "machine": "Трактор с электронным двигателем (J1939)",
+   "protocol": "galileosky",
+   "hours_method": "can",
+   "records_sent": 3886,
+   "records_expected_after_gateway": 3886,
+   "records_stored_by_traccar": 3886,
+   "records_normalized": 3886,
+   "records_via_forwarding": 3590,
+   "records_matched": 3886,
+   "max_position_error_deg": 4.999568119501419e-07,
+   "engine_hours_values": 3666,
+   "max_engine_hours_error_vs_sent_h": 4.547473508864641e-13,
+   "engine_hours_error_vs_truth_h": [
+    -0.05111111111091304,
+    0.0
+   ],
+   "quality_flags": [],
+   "transport": {
+    "packets": 250,
+    "bytes": 207817,
+    "acks_ok": 250,
+    "seconds": 0.63
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000029",
+   "profile": "harvester",
+   "machine": "Харвестер",
+   "protocol": "galileosky",
+   "hours_method": "can",
+   "records_sent": 704,
+   "records_expected_after_gateway": 704,
+   "records_stored_by_traccar": 704,
+   "records_normalized": 704,
+   "records_via_forwarding": 704,
+   "records_matched": 704,
+   "max_position_error_deg": 4.999140799100132e-07,
+   "engine_hours_values": 578,
+   "max_engine_hours_error_vs_sent_h": 4.547473508864641e-13,
+   "engine_hours_error_vs_truth_h": [
+    -0.06416666666655146,
+    -0.0002777777776827861
+   ],
+   "quality_flags": [
+    "no_fix"
+   ],
+   "transport": {
+    "packets": 39,
+    "bytes": 36354,
+    "acks_ok": 39,
+    "seconds": 0.07
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000037",
+   "profile": "forwarder",
+   "machine": "Форвардер",
+   "protocol": "galileosky",
+   "hours_method": "can",
+   "records_sent": 1991,
+   "records_expected_after_gateway": 1991,
+   "records_stored_by_traccar": 1991,
+   "records_normalized": 1991,
+   "records_via_forwarding": 1681,
+   "records_matched": 1991,
+   "max_position_error_deg": 4.997797660166725e-07,
+   "engine_hours_values": 1866,
+   "max_engine_hours_error_vs_sent_h": 4.547473508864641e-13,
+   "engine_hours_error_vs_truth_h": [
+    -0.050833333333685005,
+    0.0
+   ],
+   "quality_flags": [
+    "no_fix"
+   ],
+   "transport": {
+    "packets": 160,
+    "bytes": 106462,
+    "acks_ok": 160,
+    "seconds": 7.89
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000045",
+   "profile": "excavator",
+   "machine": "Экскаватор 20-50 т",
+   "protocol": "wialon",
+   "hours_method": "can",
+   "records_sent": 595,
+   "records_expected_after_gateway": 595,
+   "records_stored_by_traccar": 595,
+   "records_normalized": 595,
+   "records_via_forwarding": 242,
+   "records_matched": 595,
+   "max_position_error_deg": 8.30794064654583e-08,
+   "engine_hours_values": 557,
+   "max_engine_hours_error_vs_sent_h": 4.547473508864641e-13,
+   "engine_hours_error_vs_truth_h": [
+    -0.05055555555554747,
+    -0.0002777777776827861
+   ],
+   "quality_flags": [
+    "no_fix"
+   ],
+   "transport": {
+    "packets": 6,
+    "bytes": 92751,
+    "acks_ok": 6,
+    "login_reply": "#AL#1",
+    "seconds": 0.99
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000052",
+   "profile": "tractor_mech",
+   "machine": "Трактор с механическим ТНВД (без CAN)",
+   "protocol": "wialon",
+   "hours_method": "voltage",
+   "records_sent": 3154,
+   "records_expected_after_gateway": 3154,
+   "records_stored_by_traccar": 3154,
+   "records_normalized": 3154,
+   "records_via_forwarding": 1133,
+   "records_matched": 3154,
+   "max_position_error_deg": 8.332064993510357e-08,
+   "engine_hours_values": 3154,
+   "max_engine_hours_error_vs_sent_h": 0.004999999999199645,
+   "engine_hours_error_vs_truth_h": [
+    -0.024999999999636202,
+    0.0030555555549653945
+   ],
+   "quality_flags": [],
+   "transport": {
+    "packets": 32,
+    "bytes": 499201,
+    "acks_ok": 32,
+    "login_reply": "#AL#1",
+    "seconds": 2.21
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000060",
+   "profile": "timber_truck",
+   "machine": "Лесовоз с манипулятором",
+   "protocol": "wialon",
+   "hours_method": "can",
+   "records_sent": 3264,
+   "records_expected_after_gateway": 3264,
+   "records_stored_by_traccar": 3264,
+   "records_normalized": 3264,
+   "records_via_forwarding": 2677,
+   "records_matched": 3264,
+   "max_position_error_deg": 8.333098833190888e-08,
+   "engine_hours_values": 3016,
+   "max_engine_hours_error_vs_sent_h": 4.547473508864641e-13,
+   "engine_hours_error_vs_truth_h": [
+    -0.050833333333685005,
+    0.0
+   ],
+   "quality_flags": [
+    "no_fix"
+   ],
+   "transport": {
+    "packets": 33,
+    "bytes": 588308,
+    "acks_ok": 33,
+    "login_reply": "#AL#1",
+    "seconds": 2.64
+   },
+   "pass": true
+  },
+  {
+   "imei": "860000000000078",
+   "profile": "dump_truck",
+   "machine": "Карьерный самосвал",
+   "protocol": "egts",
+   "hours_method": "can",
+   "records_sent": 3834,
+   "records_expected_after_gateway": 3833,
+   "records_stored_by_traccar": 3833,
+   "records_normalized": 3833,
+   "records_via_forwarding": 3833,
+   "records_matched": 3833,
+   "max_position_error_deg": 2.095356421705219e-08,
+   "engine_hours_values": 0,
+   "max_engine_hours_error_vs_sent_h": null,
+   "engine_hours_error_vs_truth_h": [
+    null,
+    null
+   ],
+   "quality_flags": [],
+   "transport": {
+    "packets": 193,
+    "bytes": 212877,
+    "responses": 3836,
+    "response_crc_ok": 3836,
+    "seconds": 3.77
+   },
+   "egts_counter_hours_in_packets": 3796,
+   "egts_counter_hours_after_traccar": 0,
+   "pass": true
+  }
+ ],
+ "pass": true
+}

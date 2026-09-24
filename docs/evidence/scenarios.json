@@ -1,0 +1,901 @@
+{
+ "physical": {
+  "tractor_can": {
+   "title": "Трактор с электронным двигателем (J1939)",
+   "sphere": "поле",
+   "examples": "Кировец К-7М, RSM 2375, МТЗ-3522",
+   "engine_hours_week_true": 85.14,
+   "hours": {
+    "ignition": {
+     "measured_h": 89.47,
+     "error_pct": 5.09,
+     "error_per_500h": 25.5
+    },
+    "voltage": {
+     "measured_h": 85.12,
+     "error_pct": -0.02,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 85.12,
+     "error_pct": -0.02,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 92.0,
+     "max_abs_error_h": 0.051,
+     "last_error_h": -0.038
+    }
+   },
+   "odometer": {
+    "true_km": 833.39,
+    "gps_1hz_naive_km": 941.23,
+    "gps_1hz_filtered_km": 837.49,
+    "track_points_km": 832.99
+   },
+   "link": {
+    "online_share_pct": 91.5,
+    "records_per_day": 1709,
+    "delivered_pct": 100.0,
+    "latency_median_h": 0.01,
+    "latency_p95_h": 0.06,
+    "latency_max_h": 0.46,
+    "max_archive_records": 61,
+    "archive_days_at_capacity": 99,
+    "sessions_per_day": 18.4,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 53.4,
+     "bytes_per_day": 104443,
+     "mb_per_month": 3.13
+    },
+    "wialon": {
+     "payload_up_per_record": 160.5,
+     "bytes_per_day": 281446,
+     "mb_per_month": 8.44
+    },
+    "egts": {
+     "payload_up_per_record": 48.5,
+     "bytes_per_day": 144856,
+     "mb_per_month": 4.35
+    }
+   }
+  },
+  "tractor_mech": {
+   "title": "Трактор с механическим ТНВД (без CAN)",
+   "sphere": "поле",
+   "examples": "МТЗ-82.1 (Д-243), ДТ-75, Т-150К",
+   "engine_hours_week_true": 68.45,
+   "hours": {
+    "ignition": {
+     "measured_h": 71.64,
+     "error_pct": 4.66,
+     "error_per_500h": 23.3
+    },
+    "voltage": {
+     "measured_h": 68.41,
+     "error_pct": -0.06,
+     "error_per_500h": -0.3
+    },
+    "d_plus": {
+     "measured_h": 68.43,
+     "error_pct": -0.02,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 0.0
+    }
+   },
+   "odometer": {
+    "true_km": 660.34,
+    "gps_1hz_naive_km": 789.06,
+    "gps_1hz_filtered_km": 663.71,
+    "track_points_km": 661.07
+   },
+   "link": {
+    "online_share_pct": 91.5,
+    "records_per_day": 1410,
+    "delivered_pct": 100.0,
+    "latency_median_h": 0.01,
+    "latency_p95_h": 0.05,
+    "latency_max_h": 0.46,
+    "max_archive_records": 60,
+    "archive_days_at_capacity": 121,
+    "sessions_per_day": 17.4,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 39.5,
+     "bytes_per_day": 65683,
+     "mb_per_month": 1.97
+    },
+    "wialon": {
+     "payload_up_per_record": 114.1,
+     "bytes_per_day": 167590,
+     "mb_per_month": 5.03
+    },
+    "egts": {
+     "payload_up_per_record": 42.1,
+     "bytes_per_day": 111209,
+     "mb_per_month": 3.34
+    }
+   }
+  },
+  "harvester": {
+   "title": "Харвестер",
+   "sphere": "лес",
+   "examples": "Амкодор 2551, Ponsse Ergo, John Deere 1270",
+   "engine_hours_week_true": 107.54,
+   "hours": {
+    "ignition": {
+     "measured_h": 113.63,
+     "error_pct": 5.67,
+     "error_per_500h": 28.3
+    },
+    "voltage": {
+     "measured_h": 107.5,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 107.5,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 70.5,
+     "max_abs_error_h": 0.066,
+     "last_error_h": -0.035
+    }
+   },
+   "odometer": {
+    "true_km": 31.49,
+    "gps_1hz_naive_km": 794.99,
+    "gps_1hz_filtered_km": 13.9,
+    "track_points_km": 38.36
+   },
+   "link": {
+    "online_share_pct": 0.0,
+    "records_per_day": 334,
+    "delivered_pct": 0.0,
+    "latency_median_h": null,
+    "latency_p95_h": null,
+    "latency_max_h": null,
+    "max_archive_records": 2337,
+    "archive_days_at_capacity": 509,
+    "sessions_per_day": 0.0,
+    "can_requests_per_day": 1440
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 49.9,
+     "bytes_per_day": 18114,
+     "mb_per_month": 0.54
+    },
+    "wialon": {
+     "payload_up_per_record": 146.6,
+     "bytes_per_day": 49304,
+     "mb_per_month": 1.48
+    },
+    "egts": {
+     "payload_up_per_record": 46.6,
+     "bytes_per_day": 26620,
+     "mb_per_month": 0.8
+    }
+   }
+  },
+  "forwarder": {
+   "title": "Форвардер",
+   "sphere": "лес",
+   "examples": "Амкодор 2661, Ponsse Buffalo, John Deere 1110",
+   "engine_hours_week_true": 107.54,
+   "hours": {
+    "ignition": {
+     "measured_h": 113.63,
+     "error_pct": 5.67,
+     "error_per_500h": 28.3
+    },
+    "voltage": {
+     "measured_h": 107.5,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 107.5,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 89.0,
+     "max_abs_error_h": 0.051,
+     "last_error_h": -0.035
+    }
+   },
+   "odometer": {
+    "true_km": 172.69,
+    "gps_1hz_naive_km": 851.05,
+    "gps_1hz_filtered_km": 210.44,
+    "track_points_km": 181.46
+   },
+   "link": {
+    "online_share_pct": 23.0,
+    "records_per_day": 886,
+    "delivered_pct": 98.8,
+    "latency_median_h": 0.08,
+    "latency_p95_h": 4.8,
+    "latency_max_h": 28.86,
+    "max_archive_records": 381,
+    "archive_days_at_capacity": 192,
+    "sessions_per_day": 20.0,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 53.2,
+     "bytes_per_day": 57114,
+     "mb_per_month": 1.71
+    },
+    "wialon": {
+     "payload_up_per_record": 157.8,
+     "bytes_per_day": 146700,
+     "mb_per_month": 4.4
+    },
+    "egts": {
+     "payload_up_per_record": 48.8,
+     "bytes_per_day": 78424,
+     "mb_per_month": 2.35
+    }
+   }
+  },
+  "excavator": {
+   "title": "Экскаватор 20-50 т",
+   "sphere": "карьер",
+   "examples": "SANY SY215C/SY500H, XCMG XE215, ЕК-270",
+   "engine_hours_week_true": 149.3,
+   "hours": {
+    "ignition": {
+     "measured_h": 157.54,
+     "error_pct": 5.52,
+     "error_per_500h": 27.6
+    },
+    "voltage": {
+     "measured_h": 149.26,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 149.26,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 92.2,
+     "max_abs_error_h": 0.051,
+     "last_error_h": -0.032
+    }
+   },
+   "odometer": {
+    "true_km": 0.98,
+    "gps_1hz_naive_km": 434.39,
+    "gps_1hz_filtered_km": 0.18,
+    "track_points_km": 9.9
+   },
+   "link": {
+    "online_share_pct": 99.0,
+    "records_per_day": 298,
+    "delivered_pct": 100.0,
+    "latency_median_h": 0.0,
+    "latency_p95_h": 0.0,
+    "latency_max_h": 0.11,
+    "max_archive_records": 2,
+    "archive_days_at_capacity": 570,
+    "sessions_per_day": 2.9,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 53.4,
+     "bytes_per_day": 18113,
+     "mb_per_month": 0.54
+    },
+    "wialon": {
+     "payload_up_per_record": 157.5,
+     "bytes_per_day": 48065,
+     "mb_per_month": 1.44
+    },
+    "egts": {
+     "payload_up_per_record": 48.5,
+     "bytes_per_day": 25149,
+     "mb_per_month": 0.75
+    }
+   }
+  },
+  "dump_truck": {
+   "title": "Карьерный самосвал",
+   "sphere": "карьер",
+   "examples": "БелАЗ-7547/7555, XCMG XDE, SANY SKT",
+   "engine_hours_week_true": 149.3,
+   "hours": {
+    "ignition": {
+     "measured_h": 157.54,
+     "error_pct": 5.52,
+     "error_per_500h": 27.6
+    },
+    "voltage": {
+     "measured_h": 149.26,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 149.26,
+     "error_pct": -0.03,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 98.8,
+     "max_abs_error_h": 0.051,
+     "last_error_h": -0.043
+    }
+   },
+   "odometer": {
+    "true_km": 2632.41,
+    "gps_1hz_naive_km": 2777.85,
+    "gps_1hz_filtered_km": 2620.0,
+    "track_points_km": 2626.12,
+    "can_km": 2685.06
+   },
+   "link": {
+    "online_share_pct": 99.0,
+    "records_per_day": 1943,
+    "delivered_pct": 100.0,
+    "latency_median_h": 0.01,
+    "latency_p95_h": 0.02,
+    "latency_max_h": 0.19,
+    "max_archive_records": 18,
+    "archive_days_at_capacity": 88,
+    "sessions_per_day": 4.0,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 59.1,
+     "bytes_per_day": 126102,
+     "mb_per_month": 3.78
+    },
+    "wialon": {
+     "payload_up_per_record": 186.2,
+     "bytes_per_day": 364616,
+     "mb_per_month": 10.94
+    },
+    "egts": {
+     "payload_up_per_record": 55.6,
+     "bytes_per_day": 173256,
+     "mb_per_month": 5.2
+    }
+   }
+  },
+  "timber_truck": {
+   "title": "Лесовоз с манипулятором",
+   "sphere": "лес/дорога",
+   "examples": "КАМАЗ-43118/65222, Урал NEXT, Sitrak C7H",
+   "engine_hours_week_true": 79.49,
+   "hours": {
+    "ignition": {
+     "measured_h": 83.5,
+     "error_pct": 5.04,
+     "error_per_500h": 25.2
+    },
+    "voltage": {
+     "measured_h": 79.48,
+     "error_pct": -0.02,
+     "error_per_500h": -0.1
+    },
+    "d_plus": {
+     "measured_h": 79.48,
+     "error_pct": -0.02,
+     "error_per_500h": -0.1
+    },
+    "can": {
+     "records_with_value_pct": 89.7,
+     "max_abs_error_h": 0.051,
+     "last_error_h": -0.044
+    }
+   },
+   "odometer": {
+    "true_km": 2345.77,
+    "gps_1hz_naive_km": 2717.15,
+    "gps_1hz_filtered_km": 2321.63,
+    "track_points_km": 2347.57,
+    "can_km": 2380.96
+   },
+   "link": {
+    "online_share_pct": 42.8,
+    "records_per_day": 1428,
+    "delivered_pct": 98.3,
+    "latency_median_h": 0.01,
+    "latency_p95_h": 6.79,
+    "latency_max_h": 36.18,
+    "max_archive_records": 571,
+    "archive_days_at_capacity": 119,
+    "sessions_per_day": 6.1,
+    "can_requests_per_day": 0
+   },
+   "traffic": {
+    "galileosky": {
+     "payload_up_per_record": 57.4,
+     "bytes_per_day": 90864,
+     "mb_per_month": 2.73
+    },
+    "wialon": {
+     "payload_up_per_record": 179.7,
+     "bytes_per_day": 259677,
+     "mb_per_month": 7.79
+    },
+    "egts": {
+     "payload_up_per_record": 54.4,
+     "bytes_per_day": 126591,
+     "mb_per_month": 3.8
+    }
+   }
+  }
+ },
+ "variants": {
+  "harvester_no_active_request": {
+   "records_with_can_hours_pct": 0.0
+  },
+  "tractor_24v_threshold_set_for_12v": {
+   "true_h": 42.19,
+   "voltage_method_h": 72.0,
+   "error_pct": 70.7
+  },
+  "harvester_min_speed_1.5": {
+   "true_km": 15.98,
+   "gps_1hz_filtered_km": 46.16
+  },
+  "harvester_min_speed_3.0": {
+   "true_km": 15.98,
+   "gps_1hz_filtered_km": 7.47
+  },
+  "harvester_min_speed_5.0": {
+   "true_km": 15.98,
+   "gps_1hz_filtered_km": 0.0
+  },
+  "excavator_min_speed_1.5": {
+   "true_km": 0.39,
+   "gps_1hz_filtered_km": 3.21
+  },
+  "excavator_min_speed_3.0": {
+   "true_km": 0.39,
+   "gps_1hz_filtered_km": 0.08
+  },
+  "excavator_min_speed_5.0": {
+   "true_km": 0.39,
+   "gps_1hz_filtered_km": 0.0
+  },
+  "forwarder_min_speed_1.5": {
+   "true_km": 85.7,
+   "gps_1hz_filtered_km": 118.59
+  },
+  "forwarder_min_speed_3.0": {
+   "true_km": 85.7,
+   "gps_1hz_filtered_km": 103.93
+  },
+  "forwarder_min_speed_5.0": {
+   "true_km": 85.7,
+   "gps_1hz_filtered_km": 86.09
+  }
+ },
+ "forecasting": {
+  "tractor_250h": {
+   "title": "Трактор (юг, полевые работы)",
+   "interval_h": 250,
+   "services": 23,
+   "annual_hours": 1460.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 23,
+      "mae_days": 66.1,
+      "p90_abs_days": 299,
+      "late_share": 0.83
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 8.0,
+      "p90_abs_days": 32,
+      "late_share": 0.61
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 3.7,
+      "p90_abs_days": 4,
+      "late_share": 0.57
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 23,
+      "mae_days": 51.7,
+      "p90_abs_days": 199,
+      "late_share": 0.78
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 5.3,
+      "p90_abs_days": 12,
+      "late_share": 0.61
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 3.3,
+      "p90_abs_days": 4,
+      "late_share": 0.43
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 23,
+      "mae_days": 20.6,
+      "p90_abs_days": 48,
+      "late_share": 0.78
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 3.1,
+      "p90_abs_days": 6,
+      "late_share": 0.61
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 1.3,
+      "p90_abs_days": 3,
+      "late_share": 0.52
+     }
+    }
+   }
+  },
+  "tractor_500h": {
+   "title": "Трактор (юг, полевые работы)",
+   "interval_h": 500,
+   "services": 11,
+   "annual_hours": 1460.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 11,
+      "mae_days": 66.4,
+      "p90_abs_days": 299,
+      "late_share": 0.73
+     },
+     "14": {
+      "n": 11,
+      "mae_days": 12.5,
+      "p90_abs_days": 34,
+      "late_share": 0.55
+     },
+     "7": {
+      "n": 11,
+      "mae_days": 6.2,
+      "p90_abs_days": 17,
+      "late_share": 0.55
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 11,
+      "mae_days": 53.8,
+      "p90_abs_days": 199,
+      "late_share": 0.82
+     },
+     "14": {
+      "n": 11,
+      "mae_days": 8.1,
+      "p90_abs_days": 21,
+      "late_share": 0.64
+     },
+     "7": {
+      "n": 11,
+      "mae_days": 5.0,
+      "p90_abs_days": 11,
+      "late_share": 0.36
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 11,
+      "mae_days": 18.5,
+      "p90_abs_days": 32,
+      "late_share": 0.73
+     },
+     "14": {
+      "n": 11,
+      "mae_days": 3.4,
+      "p90_abs_days": 6,
+      "late_share": 0.64
+     },
+     "7": {
+      "n": 11,
+      "mae_days": 1.5,
+      "p90_abs_days": 3,
+      "late_share": 0.45
+     }
+    }
+   }
+  },
+  "harvester_500h": {
+   "title": "Харвестер/форвардер (2 смены)",
+   "interval_h": 500,
+   "services": 36,
+   "annual_hours": 4534.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 34,
+      "mae_days": 16.1,
+      "p90_abs_days": 27,
+      "late_share": 0.62
+     },
+     "14": {
+      "n": 34,
+      "mae_days": 2.8,
+      "p90_abs_days": 7,
+      "late_share": 0.41
+     },
+     "7": {
+      "n": 34,
+      "mae_days": 1.9,
+      "p90_abs_days": 3,
+      "late_share": 0.47
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 34,
+      "mae_days": 14.7,
+      "p90_abs_days": 11,
+      "late_share": 0.59
+     },
+     "14": {
+      "n": 34,
+      "mae_days": 2.9,
+      "p90_abs_days": 5,
+      "late_share": 0.41
+     },
+     "7": {
+      "n": 34,
+      "mae_days": 2.5,
+      "p90_abs_days": 3,
+      "late_share": 0.44
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 34,
+      "mae_days": 5.3,
+      "p90_abs_days": 20,
+      "late_share": 0.56
+     },
+     "14": {
+      "n": 34,
+      "mae_days": 2.2,
+      "p90_abs_days": 3,
+      "late_share": 0.38
+     },
+     "7": {
+      "n": 34,
+      "mae_days": 1.8,
+      "p90_abs_days": 2,
+      "late_share": 0.41
+     }
+    }
+   }
+  },
+  "excavator_500h": {
+   "title": "Карьерный экскаватор (2 смены)",
+   "interval_h": 500,
+   "services": 48,
+   "annual_hours": 6097.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 46,
+      "mae_days": 1.9,
+      "p90_abs_days": 4,
+      "late_share": 0.43
+     },
+     "14": {
+      "n": 46,
+      "mae_days": 1.3,
+      "p90_abs_days": 3,
+      "late_share": 0.52
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.8,
+      "p90_abs_days": 2,
+      "late_share": 0.37
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 46,
+      "mae_days": 2.3,
+      "p90_abs_days": 5,
+      "late_share": 0.43
+     },
+     "14": {
+      "n": 46,
+      "mae_days": 1.6,
+      "p90_abs_days": 4,
+      "late_share": 0.52
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.8,
+      "p90_abs_days": 2,
+      "late_share": 0.28
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 46,
+      "mae_days": 1.7,
+      "p90_abs_days": 3,
+      "late_share": 0.5
+     },
+     "14": {
+      "n": 46,
+      "mae_days": 1.0,
+      "p90_abs_days": 2,
+      "late_share": 0.46
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.8,
+      "p90_abs_days": 2,
+      "late_share": 0.39
+     }
+    }
+   }
+  },
+  "dump_truck_500h": {
+   "title": "Карьерный самосвал (2 смены)",
+   "interval_h": 500,
+   "services": 47,
+   "annual_hours": 5924.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 45,
+      "mae_days": 2.8,
+      "p90_abs_days": 6,
+      "late_share": 0.47
+     },
+     "14": {
+      "n": 45,
+      "mae_days": 1.5,
+      "p90_abs_days": 3,
+      "late_share": 0.42
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.8,
+      "p90_abs_days": 2,
+      "late_share": 0.35
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 45,
+      "mae_days": 3.0,
+      "p90_abs_days": 7,
+      "late_share": 0.49
+     },
+     "14": {
+      "n": 45,
+      "mae_days": 1.4,
+      "p90_abs_days": 3,
+      "late_share": 0.4
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.9,
+      "p90_abs_days": 2,
+      "late_share": 0.3
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 45,
+      "mae_days": 2.5,
+      "p90_abs_days": 5,
+      "late_share": 0.47
+     },
+     "14": {
+      "n": 45,
+      "mae_days": 1.3,
+      "p90_abs_days": 3,
+      "late_share": 0.4
+     },
+     "7": {
+      "n": 46,
+      "mae_days": 0.8,
+      "p90_abs_days": 2,
+      "late_share": 0.33
+     }
+    }
+   }
+  },
+  "timber_truck_500h": {
+   "title": "Лесовоз (зимник + лето)",
+   "interval_h": 500,
+   "services": 24,
+   "annual_hours": 3074.0,
+   "errors": {
+    "mean28": {
+     "30": {
+      "n": 23,
+      "mae_days": 7.2,
+      "p90_abs_days": 20,
+      "late_share": 0.7
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 4.4,
+      "p90_abs_days": 8,
+      "late_share": 0.43
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 3.5,
+      "p90_abs_days": 5,
+      "late_share": 0.48
+     }
+    },
+    "ewma": {
+     "30": {
+      "n": 23,
+      "mae_days": 6.5,
+      "p90_abs_days": 18,
+      "late_share": 0.57
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 3.9,
+      "p90_abs_days": 7,
+      "late_share": 0.57
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 2.8,
+      "p90_abs_days": 4,
+      "late_share": 0.39
+     }
+    },
+    "seasonal": {
+     "30": {
+      "n": 23,
+      "mae_days": 5.1,
+      "p90_abs_days": 14,
+      "late_share": 0.61
+     },
+     "14": {
+      "n": 23,
+      "mae_days": 3.1,
+      "p90_abs_days": 5,
+      "late_share": 0.57
+     },
+     "7": {
+      "n": 23,
+      "mae_days": 2.9,
+      "p90_abs_days": 3,
+      "late_share": 0.52
+     }
+    }
+   }
+  }
+ }
+}

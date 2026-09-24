@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+<!--
+  Stand configuration for the device gateway (Traccar 6.15.x, Apache-2.0).
+  Production differs: PostgreSQL instead of H2, pre-registered devices only,
+  private APN / VPN in front of the protocol ports.
+-->
+<properties>
+    <entry key='database.driver'>org.h2.Driver</entry>
+    <entry key='database.url'>jdbc:h2:./data/database</entry>
+    <entry key='database.user'>sa</entry>
+    <entry key='database.password' />
+
+    <!-- Only the protocols we actually plan to accept. -->
+    <entry key='protocols.enable'>galileo,wialon,egts,navis</entry>
+    <entry key='galileo.port'>5034</entry>
+    <entry key='wialon.port'>5039</entry>
+    <entry key='egts.port'>5165</entry>
+    <entry key='navis.port'>5064</entry>
+
+    <!-- Stand only: auto-register unknown IMEIs. Production: false. -->
+    <entry key='database.registerUnknown'>true</entry>
+    <!--
+      Must stay false: with saveOriginal=true every position of a Wialon black-box
+      packet carries the whole packet hex (~37 000 chars for 100 messages) and
+      tc_positions.attributes (VARCHAR 4000) rejects it; observed on this stand.
+      Raw packets are archived from the protocol log instead.
+    -->
+    <entry key='database.saveOriginal'>false</entry>
+
+    <!-- Every decoded position is pushed to the normalization service. -->
+    <entry key='forward.type'>json</entry>
+    <entry key='forward.url'>http://127.0.0.1:9100/ingest/traccar</entry>
+    <entry key='forward.retry.enable'>true</entry>
+    <entry key='forward.retry.delay'>1000</entry>
+    <entry key='forward.retry.count'>20</entry>
+    <entry key='forward.retry.limit'>100000</entry>
+
+    <entry key='web.port'>8082</entry>
+    <entry key='logger.level'>info</entry>
+    <entry key='logger.console'>false</entry>
+</properties>

@@ -1,0 +1,33 @@
+/.hoplite/
+/.venv/
+/.local/
+__pycache__/
+.pytest_cache/
+/.context/
+# platform
+platform/node_modules/
+platform/dist/
+platform/.data/
+platform/.vercel-out/
+platform/test-results/
+platform/playwright-report/
+# gateway
+gateway/*.sqlite3*
+gateway/**/__pycache__/
+platform/.vercel/
+# native shells (build outputs, copied web bundles)
+apps/*/node_modules/
+apps/desktop/release/
+apps/desktop/web/
+apps/mobile/www/
+apps/mobile/android/app/build/
+apps/mobile/android/.gradle/
+apps/mobile/android/build/
+apps/mobile/android/local.properties
+.hoplite/artifacts/
+
+# live stand: local secrets and runtime data
+stand/stand.env
+stand/nohup.log
+.stand/
+stand-state.json

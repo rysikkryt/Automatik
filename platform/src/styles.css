@@ -1,0 +1,149 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tokens: 21st.dev theme "Darkmatter" (serafimcloud), dark variant moved to pure black. */
+:root {
+  --background: #f6f6f7;
+  --foreground: #111827;
+  --card: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #eeeeee;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --primary: #d87943;
+  --primary-foreground: #ffffff;
+  --ring: #d87943;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --chart-1: #5f8787;
+  --chart-2: #e78a53;
+  --radius: 0.75rem;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ededed;
+  --card: #0a0a0a;
+  --muted: #141414;
+  --muted-foreground: #8b8b8b;
+  --accent: #1a1a1a;
+  --border: #1f1f1f;
+  --input: #2a2a2a;
+  --primary: #e78a53;
+  --primary-foreground: #000000;
+  --ring: #e78a53;
+  --destructive: #ef4444;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --chart-1: #5f8787;
+  --chart-2: #e78a53;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --font-sans: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', 'Roboto Mono', monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  @apply bg-background text-foreground antialiased;
+  font-feature-settings: 'tnum' 1;
+}
+
+@utility card {
+  @apply rounded-xl border border-border bg-card;
+}
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+}
+@utility btn-primary {
+  @apply btn bg-primary text-primary-foreground hover:opacity-90;
+}
+@utility btn-ghost {
+  @apply btn border border-border bg-card text-foreground hover:bg-accent;
+}
+@utility btn-danger {
+  @apply btn bg-destructive text-white hover:opacity-90;
+}
+@utility input {
+  @apply w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20;
+}
+@utility label {
+  @apply mb-1 block text-[11px] font-semibold tracking-wider text-muted-foreground uppercase;
+}
+@utility badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
+}
+
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+.dark .maplibregl-ctrl-attrib {
+  background: rgb(0 0 0 / 0.6) !important;
+  color: #8b8b8b;
+}
+.dark .maplibregl-ctrl-attrib a {
+  color: #a3a3a3;
+}
+.dark .maplibregl-ctrl-group {
+  background: #0a0a0a;
+  border: 1px solid #1f1f1f;
+}
+.dark .maplibregl-ctrl-group button + button {
+  border-top-color: #1f1f1f;
+}
+.dark .maplibregl-ctrl-icon {
+  filter: invert(1);
+}
+.dark .maplibregl-popup-content {
+  background: #0a0a0a;
+  color: #ededed;
+  border: 1px solid #1f1f1f;
+}
+
+/* knowledge base prose */
+.kb ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.kb ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+.kb li {
+  margin: 0.2rem 0;
+}
+.kb code {
+  border-radius: 0.25rem;
+  background: var(--muted);
+  padding: 0 0.25rem;
+  font-size: 0.85em;
+}

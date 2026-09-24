@@ -1,0 +1,7 @@
+{
+  "appId": "ru.itles.app",
+  "appName": "ITles",
+  "webDir": "www",
+  "android": { "allowMixedContent": false, "useLegacyBridge": true },
+  "server": { "androidScheme": "https" }
+}
