@@ -12,15 +12,15 @@
   --accent: #eeeeee;
   --border: #e5e7eb;
   --input: #e5e7eb;
-  --primary: #d87943;
+  --primary: #46a171;
   --primary-foreground: #ffffff;
-  --ring: #d87943;
+  --ring: #46a171;
   --destructive: #dc2626;
   --success: #16a34a;
   --warning: #d97706;
   --danger: #dc2626;
   --chart-1: #5f8787;
-  --chart-2: #e78a53;
+  --chart-2: #72bc8f;
   --radius: 0.75rem;
   color-scheme: light;
 }
@@ -34,15 +34,15 @@
   --accent: #1a1a1a;
   --border: #1f1f1f;
   --input: #2a2a2a;
-  --primary: #e78a53;
+  --primary: #72bc8f;
   --primary-foreground: #000000;
-  --ring: #e78a53;
+  --ring: #72bc8f;
   --destructive: #ef4444;
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
   --chart-1: #5f8787;
-  --chart-2: #e78a53;
+  --chart-2: #72bc8f;
   color-scheme: dark;
 }
 
